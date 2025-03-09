@@ -58,15 +58,15 @@ Start the frontend server: npm run dev
 This will start the frontend at http://localhost:3000.
 
 ### 📱 Usage
-- 1️⃣ Login & Signup
+-  Login & Signup
 Go to the home page (http://localhost:3000).
 Click on Login or Signup to create a new account or log into an existing one.
-- 2️⃣ Dashboard--
+-  Dashboard
 Once logged in, you will be redirected to the Dashboard page where you can view your blog posts.
 You can create a new blog post by clicking the Create New Post button.
-- 3️⃣ Create New Post--
+-  Create New Post
 On the Create Post page, enter the title and content of your post, then click Submit to save it.
-- 4️⃣ View Posts--
+-  View Posts
 The posts you create will appear in the Dashboard, allowing you to see all your existing posts.
 
 ### 🧑‍💻 API Endpoints

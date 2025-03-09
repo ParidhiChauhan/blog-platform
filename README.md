@@ -75,7 +75,7 @@ The posts you create will appear in the Dashboard, allowing you to see all your 
 - Body: { email, password }
 - POST /api/auth/login: Login a user and return a JWT token.
 - Body: { email, password }
-- Response: { token }--
+- Response: { token }
 
 2️⃣ Post Routes
 - POST /api/posts: Create a new blog post (requires authentication).

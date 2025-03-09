@@ -1,0 +1,265 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Global container to center content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Smooth transition on hover for links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* For forms, make inputs look clean */
+input,
+textarea,
+button {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Form and Button Styles */
+form {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated Button Styling */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 200px;  /* Limits width to avoid large buttons */
+  display: block;
+  margin: 10px auto; /* Centers buttons properly */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Inputs and Textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Fix for Login & Signup Buttons Overlapping */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adds spacing between buttons */
+  margin-top: 20px;
+}
+
+.auth-buttons button {
+  max-width: 180px; /* Ensures proper size */
+}
+
+/* Improved "Create New Post" Button */
+.create-post-btn {
+  width: 220px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+.create-post-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Card Style for Posts */
+.post-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Flexbox Layout for Dashboard */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Responsive Design for Mobile and Tablet */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .dashboard-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .auth-buttons {
+    flex-direction: column; /* Stacks login/signup buttons on mobile */
+  }
+}
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Buttons Container (For Proper Alignment) */
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;  /* Adds spacing between buttons */
+  margin-bottom: 20px;
+}
+
+/* Dashboard Buttons Styling */
+.dashboard-buttons button {
+  max-width: 180px;  /* Ensures buttons are not too large */
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-buttons button:hover {
+  transform: scale(1.05);
+}
+
+/* Create New Post Button */
+.create-post-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.create-post-btn:hover {
+  background-color: #218838;
+}
+
+/* My Posts Button */
+.my-posts-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.my-posts-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Posts List Styling */
+.posts-list {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .dashboard-buttons {
+    flex-direction: column; /* Stacks buttons on smaller screens */
+  }
+
+  .dashboard-buttons button {
+    width: 100%;
+  }
+}
